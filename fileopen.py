@@ -1,18 +1,16 @@
 import subprocess
 import pyautogui
 import time
-
-with open('code.txt', 'r') as f:
+with open("C:/Users/ravin/Desktop/python-gui-automation/code.txt", 'r') as f:
     contents = f.read()
 
 subprocess.Popen([r"C:\Users\ravin\AppData\Local\Postman\Postman.exe"])
-time.sleep(11)
+time.sleep(9)
 
 pyautogui.click(x=962, y=294)
 pyautogui.hotkey('ctrl', 'a')
+
 pyautogui.typewrite(contents)
-
-
 # pyautogui.displayMousePosition()
 # print(pyautogui.position()) Use it to get the position of the cursor
 
